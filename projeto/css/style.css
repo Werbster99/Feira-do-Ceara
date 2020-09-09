@@ -257,7 +257,7 @@ header#cabecalho {
 }
 
 header#cabecalho img#icone{
-	position: absolute;
+	position: relative;
 	left: 75%;
 	top: -2%;
     height: 150px;
