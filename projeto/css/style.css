@@ -5,6 +5,10 @@
 	src: url("..fontes\._bubblegum-sans-regular.otf");
 }
 
+/* Desktop */
+
+@media(min-width: 992px){
+
 /* Configurações Gerais */
 
 *{
@@ -153,7 +157,208 @@ header#cabecalho-artigo h3 {
 	color: #606060;
 }
 
+/* Configuração da lateral (aside) */
 
+aside#lateral{
+    display: block;
+    width: 30%;	
+    position: relative;
+    float: right;			
+    margin-right: 5%;
+    margin-left: auto;
+    background-color: #dddddd;			
+    margin-top: 30px;			
+    box-shadow: 2px 2px 2px rgba(0,0,0,.5);			
+}
+
+aside#lateral h1 {
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-top: 0px;
+}
+    
+aside#lateral h2 {
+    background-color: #606060;
+    font-size: 13pt;
+    color: #ffffff;
+    padding: 5px;
+}
+    
+/* Configuração do rodapé (footer) */
+
+footer#rodape p {
+	clear: both;
+	border-top: 1px solid #606060;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-style: italic;
+}
+
+a{
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+}
+
+/* Tablet */
+
+@media(min-width: 768px) and (max-width: 991px){
+
+/* Configurações Gerais */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: #cecece;
+}
+
+div#interface{
+    background-color: white;
+    box-sizing: border-box;
+    border: 1px solid black;
+    width: 80%;
+    display: block;
+    float: center;
+    margin: 0 auto 0 auto;
+	overflow: hidden;
+}
+
+h1{
+    font-family: Arial, sans-serif;
+    font-size: 32pt;
+    text-decoration: underline;
+    font-size: bolder;
+}
+
+p{
+    font-size: 12pt;
+    font-family: Arial, sans-serif;
+    text-align: justify;
+    text-indent: 5%;
+}
+
+/* Configuração do Cabeçalho */
+
+header#cabecalho {
+	border-bottom: 1px solid;
+	height: 150px;
+	background-color: #ffffff;
+	margin-bottom: 0px;
+}
+
+header#cabecalho img#icone{
+	position: absolute;
+	left: 75%;
+	top: -2%;
+    height: 150px;
+}
+
+header#cabecalho h1{
+	font-family: 'FonteLogo', sans-serif;
+	font-size: 30pts;
+	color: #606060;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.6);	
+	padding: 0px;
+	margin-bottom: 0px;
+}
+
+header#cabecalho h2{
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 15pts;
+	color: #888888;
+	padding: 0px;
+	margin-top: 0px;
+	position: relative;
+	top: 0px;
+}
+
+/*Configuração do menu(dentro do cabeçalho)  */
+
+nav#menu ul {
+	list-style: none;
+	text-transform: uppercase;
+	position: absolute;
+	top: -1.9%;
+	left: 50%;
+}
+			
+nav#menu li {
+	display: inline-block;
+	background: #dddddd;
+	padding: 12px;
+	margin: 20px;
+	margin-right: -15px;
+	transition: background-color 1s;
+}
+			
+nav#menu li:hover {
+	background-color: #606060;
+}			
+			
+nav#memu h1 {
+	display:none;
+			}
+			
+nav#menu a {
+	color: #000000;
+	text-decoration: none;
+}	
+
+nav#menu a:hover {
+		color: #ffffff;
+}
+
+/* Configuração do corpo (section) */
+
+section#corpo{
+    display: block;
+    width: 55%;
+    float: left;	
+    border-right: 1px solid #606060;			
+    padding-right: 2.5%;			
+    padding-left: 2.5%;	
+}
+
+article#noticia-principal h2 {
+	font-size: 12pt;
+	color: #606060;
+	background-color: #dddddd; 
+	padding: 5px 0px 5px 10px;
+	margin: 10px 0px 10px 0px;
+}
+
+header#cabecalho-artigo h1 {
+	font-family: 'FonteLogo';
+	font-size: 20pt;
+	color: #606060;
+	margin-bottom: 0px;
+}
+
+header#cabecalho-artigo h2 {
+	font-size: 13pt;
+	color: #cecece;
+	background-color: #ffffff;
+	margin: 0px;
+}
+
+.direita {
+	text-align: right;
+}
+
+header#cabecalho-artigo h3 {
+	font-size: 12pt;
+	color: #606060;
+}
 
 /* Configuração da lateral (aside) */
 
@@ -183,10 +388,6 @@ aside#lateral h2 {
     padding: 5px;
 }
     
-
-
-
-
 /* Configuração do rodapé (footer) */
 
 footer#rodape p {
@@ -206,3 +407,6 @@ a{
 a:hover {
     text-decoration: underline;
 }
+
+}
+
