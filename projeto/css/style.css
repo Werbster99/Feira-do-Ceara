@@ -5,32 +5,11 @@
 	src: url("https://werbster99.github.io/Feira-do-Ceara/projeto/fontes/bubblegum-sans-regular.otf");
 }
 
-/* Desktop */
-
-@media(min-width: 992px){
-
 /* Configurações Gerais */
 
 *{
     margin: 0px;
     padding: 0px;
-}
-
-body{
-    background:url("../imagens/praia4.png") no-repeat;
-	background-size: 100% 100%;
-	background-position: center;
-}
-
-div#interface{
-    background-color: white;
-    box-sizing: border-box;
-    border: 1px solid black;
-    width: 80%;
-    display: block;
-    float: center;
-    margin: 0 auto 0 auto;
-	overflow: hidden;
 }
 
 h1{
@@ -51,6 +30,50 @@ p{
     text-indent: 5%;
 }
 
+/* Configuração do rodapé (footer) */
+
+footer#rodape p {
+	clear: both;
+	box-sizing: border-box;
+	border-top: 1px solid #606060;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-style: italic;
+}
+
+a{
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Desktop */
+
+@media(min-width: 992px){
+
+/* Configurações Específicas */
+
+body{
+	background:url("../imagens/praia4.png") no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+}
+	
+div#interface{
+	background-color: white;
+	box-sizing: border-box;
+	border: 1px solid black;
+	width: 80%;
+	display: block;
+	float: center;
+	margin: 0px auto 0px auto;
+	overflow: hidden;
+}
+	
 /* Configuração do Cabeçalho */
 
 div#inicio{
@@ -145,6 +168,7 @@ header#cabecalho-artigo h1 {
 	color: #606060;
 	margin-bottom: 0px;
 	text-align: center;
+	text-decoration: none;
 }
 
 header#cabecalho-artigo h2 {
@@ -201,7 +225,6 @@ table#tabela td.ce {
 
 table#tabela td.cd {
 	background-color: #cecece;
-	
 }
 
 table#tabela caption {
@@ -233,29 +256,16 @@ aside#lateral li{
 }
 
 aside#lateral span{
-
 	float: right;
 }
 
-/* Configuração do rodapé (footer) */
-
-footer#rodape p {
-	clear: both;
-	box-sizing: border-box;
-	border-top: 1px solid #606060;
-	text-align: center;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	font-style: italic;
+aside#lateral{ 
+	color: #000000;
+	text-decoration: none;
 }
 
-a{
-    color: #000000;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
+aside#lateral a:hover{
+	color: rgb(61, 11, 61);
 }
 
 }
@@ -264,59 +274,35 @@ a:hover {
 
 @media(min-width: 768px) and (max-width: 991px){
 
-/* Configurações Gerais */
-
-*{
-    margin: 0px;
-    padding: 0px;
-}
+/* Configurações Especificas */
 
 body{
-    background: url("../imagens/praia3.png");
-	background-size: 100% 100%;
-	background-position: center;
+    background: url("../imagens/praia5.png");
+	
 }
 
 div#interface{
     background-color: white;
     box-sizing: border-box;
     border: 1px solid black;
-    width: 90%;
+    width: 85%;
     display: block;
     float: center;
     margin: 0px auto 0px auto;
 	overflow: hidden;
 }
 
-h1{
-    font-family: Arial, sans-serif;
-    font-size: 32pt;
-    text-decoration: underline;
-    font-size: bolder;
-}
-
-h2{
-	font-family: Arial, sans-serif;
-}
-
-p{
-    font-size: 12pt;
-    font-family: Arial, sans-serif;
-    text-align: justify;
-    text-indent: 5%;
-}
-
 /* Configuração do Cabeçalho */
 
 div#inicio{
-	width: 90%;
-	margin-left: 5%;
-	margin-right: 5%;
+	width: 85%;
+	margin-left: 7.5%;
+	margin-right: 7.5%;
 	box-sizing: border-box;
 	border: 1px solid black;
-	background: url("../imagens/fortaleza-noite2.png") no-repeat;
+	background: url("../imagens/fortaleza-m.png") no-repeat;
 	background-size: 100% 100%;
-	height: 250px;
+	height: 200px;
 	background-position: center;
 }
 
@@ -400,6 +386,7 @@ header#cabecalho-artigo h1 {
 	color: #606060;
 	margin-bottom: 0px;
 	text-align: center;
+	text-decoration:none;
 }
 
 header#cabecalho-artigo h2 {
@@ -456,7 +443,6 @@ table#tabela td.ce {
 
 table#tabela td.cd {
 	background-color: #cecece;
-	
 }
 
 table#tabela caption {
@@ -491,39 +477,13 @@ aside#lateral span{
 	float: right;
 }
 
-/* Configuração do rodapé (footer) */
-
-footer#rodape p {
-	clear: both;
-	box-sizing: border-box;
-	border-top: 1px solid #606060;
-	text-align: center;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	font-style: italic;
-}
-
-a{
-    color: #000000;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
 }
 
 /* Mobile */
 
 @media(max-width: 767px){
 
-/* Configurações Gerais */
-
-*{
-    margin: 0px;
-    padding: 0px;
-}
+/* Configurações Específicas */
 
 body{
     background-color: #dddddd;
@@ -540,33 +500,15 @@ div#interface{
 	overflow: hidden;
 }
 
-h1{
-    font-family: Arial, sans-serif;
-    font-size: 32pt;
-    text-decoration: underline;
-    font-size: bolder;
-}
-
-h2{
-	font-family: Arial, sans-serif;
-}
-
-p{
-    font-size: 12pt;
-    font-family: Arial, sans-serif;
-    text-align: justify;
-    text-indent: 5%;
-}
-
 /* Configuração do Cabeçalho */
 
 div#inicio{
 	width: 100%;
 	box-sizing: border-box;
 	border: 1px solid black;
-	background: url("../imagens/Fortaleza.png") no-repeat;
+	background: url("../imagens/fortaleza-noite3(2).png") no-repeat;
 	background-size: 100% 100%;
-	height: 250px;
+	height: 150px;
 	background-position: center;
 }
 
@@ -649,6 +591,7 @@ header#cabecalho-artigo h1 {
 	color: #606060;
 	margin-bottom: 0px;
 	text-align: center;
+	text-decoration: none;
 }
 
 header#cabecalho-artigo h2 {
@@ -738,26 +681,4 @@ aside#lateral span{
 	float: right;
 }
 
-/* Configuração do rodapé (footer) */
-
-footer#rodape p {
-	clear: both;
-	box-sizing: border-box;
-	border-top: 1px solid #606060;
-	text-align: center;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	font-style: italic;
 }
-
-a{
-    color: #000000;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-}
-
