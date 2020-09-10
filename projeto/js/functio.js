@@ -1,4 +1,4 @@
-function mudaFoto(foto)
+function mudaFoto(tipo)
 	{
-	document.getElementById("icone").src="https://werbster99.github.io/Feira-do-Ceara/projeto/imagens/";
+        document.getElementById("luz").src = "https://werbster99.github.io/Feira-do-Ceara/projeto/imagens/" + tipo + ".png";
 }

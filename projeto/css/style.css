@@ -17,7 +17,7 @@
 }
 
 body{
-    background-color: #cecece;
+    background-color: #dddddd;
 }
 
 div#interface{
@@ -38,6 +38,10 @@ h1{
     font-size: bolder;
 }
 
+h2{
+	font-family: Arial, sans-serif;
+}
+
 p{
     font-size: 12pt;
     font-family: Arial, sans-serif;
@@ -47,39 +51,23 @@ p{
 
 /* Configuração do Cabeçalho */
 
-header#cabecalho {
-	border-bottom: 1px solid;
-	height: 160px;
-	background-color: #ffffff;
-	margin-bottom: 0px;
-	position: relative;
+div#inicio{
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
 	box-sizing: border-box;
+	border: 1px solid black;
+	background: url("../imagens/fortaleza-noite2.png");
+	background-size: 100%;
+	height: 250px;
+	background-position: center;
 }
 
-header#cabecalho img#icone{
-	position: absolute;
-	left: 80%;
-	top: 0%;
-    height: 150px;
-}
-
-header#cabecalho h1{
-	font-family: 'FonteLogo', sans-serif;
-	font-size: 30pts;
-	color: #606060;
-	text-shadow: 1px 1px 1px rgba(0,0,0,.6);	
-	padding: 0px;
+header#cabecalho {
 	margin-bottom: 0px;
-}
-
-header#cabecalho h2{
-	font-family: 'Titillium Web', sans-serif;
-	font-size: 15pts;
-	color: #888888;
+	box-sizing: border-box;
+	margin: 0px;
 	padding: 0px;
-	margin-top: 0px;
-	position: relative;
-	top: 0px;
 }
 
 /*Configuração do menu(dentro do cabeçalho)  */
@@ -87,27 +75,38 @@ header#cabecalho h2{
 nav#menu ul {
 	list-style: none;
 	text-transform: uppercase;
-	position: absolute;
-	top: -1.9%;
-	left: 40%;
+	top: 1%;
+	text-align: center;
+	box-sizing: border-box;
+	border-bottom-style: none;
+	width: 100%;
+	border-bottom: 5px solid white;
+	border: none;
 }
 			
 nav#menu li {
 	display: inline-block;
 	background: #dddddd;
-	padding: 12px;
+	padding: 1%;
+	text-align: center;
 	margin-top: 0px;
-	margin-right: 5px;
+	margin-right: 10px;
 	transition: background-color 1s;
+	font-family: 'FonteLogo';
 }
-			
+
+nav#menu li#l1{
+	margin-right: 0px;
+	padding-right:
+}
+
 nav#menu li:hover {
 	background-color: #606060;
 }			
 			
 nav#memu h1 {
 	display:none;
-			}
+}
 			
 nav#menu a {
 	color: #000000;
@@ -115,7 +114,7 @@ nav#menu a {
 }	
 
 nav#menu a:hover {
-		color: #ffffff;
+	color: #ffffff;
 }
 
 /* Configuração do corpo (section) */
@@ -125,6 +124,7 @@ section#corpo{
     width: 65%;
 	box-sizing: border-box;
 	float: left;	
+	padding-top: 30px;
     border-right: 1px solid #606060;			
     padding-right: 2.5%;			
     padding-left: 2.5%;	
@@ -134,7 +134,7 @@ article#noticia-principal h2 {
 	font-size: 12pt;
 	color: #606060;
 	background-color: #dddddd; 
-	padding: 5px 0px 5px 10px;
+	padding: 5px ;
 	margin: 10px 0px 10px 0px;
 }
 
@@ -143,6 +143,7 @@ header#cabecalho-artigo h1 {
 	font-size: 20pt;
 	color: #606060;
 	margin-bottom: 0px;
+	text-align: center;
 }
 
 header#cabecalho-artigo h2 {
@@ -168,13 +169,47 @@ aside#lateral{
     width: 30%;	
 	box-sizing: border-box;
 	position: relative;
-    float: right;			
-    margin-right: 2.5%;
-    margin-left: auto;
+    float: left;			
+    margin-right: auto;
+    margin-left: 2.5%;
     background-color: #dddddd;			
     margin-top: 30px;			
     box-shadow: 2px 2px 2px rgba(0,0,0,.5);			
 }
+
+table#tabela {
+	border: 1px solid #606060;
+	border-spacing: 0px;
+	float: center;
+}
+
+table#tabela td {
+	border: 1px solid #606060; 
+	padding: 10px;
+	text-align: center;
+	vertical-align: middle;
+	width: 10%;
+}
+
+table#tabela td.ce {
+	color: #ffffff;
+	background-color: #606060;
+	vertical-align: top;
+	font-weight:  bold;
+}
+
+table#tabela td.cd {
+	background-color: #cecece;
+	
+}
+
+table#tabela caption {
+	color: black;
+	font-size: 13pt;
+	font-weight: bolder;
+	padding: 10px;
+	font-family: Arial, sans-serif;
+}	
 
 aside#lateral h1 {
     font-family: 'FonteLogo', sans-serif;
@@ -189,7 +224,18 @@ aside#lateral h2 {
     color: #ffffff;
     padding: 5px;
 }
-    
+
+aside#lateral li{
+	list-style: none;
+	font-family: 'FonteLogo';
+	padding: 2%;
+}
+
+aside#lateral span{
+
+	float: right;
+}
+
 /* Configuração do rodapé (footer) */
 
 footer#rodape p {
@@ -259,40 +305,27 @@ p{
 
 /* Configuração do Cabeçalho */
 
+div#inicio{
+	width: 90%;
+	height: 250px;
+	margin-left: 5%;
+	margin-right: 5%;
+	box-sizing: border-box;
+	border: 1px solid black;
+	background: url("../imagens/fortaleza-noite2.png") no-repeat;
+	background-position: center;
+	background-size: 100%;
+	padding: 0px;
+}
+
 header#cabecalho {
 	border-bottom: 1px solid;
-	box-sizing: border-box;
-	height: 150px;
-	background-color: #ffffff;
+	height: 250px;
 	margin-bottom: 0px;
-	overflow: hidden;
-}
-
-header#cabecalho img#icone{
-	position: absolute;
-	left: 75%;
-	top: -1.9%;
-    height: 150px;
-	overflow: hidden;
-}
-
-header#cabecalho h1{
-	font-family: 'FonteLogo', sans-serif;
-	font-size: 30pts;
-	color: #606060;
-	text-shadow: 1px 1px 1px rgba(0,0,0,.6);	
-	padding: 0px;
-	margin-bottom: 0px;
-}
-
-header#cabecalho h2{
-	font-family: 'Titillium Web', sans-serif;
-	font-size: 15pts;
-	color: #888888;
-	padding: 0px;
-	margin-top: 0px;
 	position: relative;
-	top: 0px;	
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
 }
 
 /*Configuração do menu(dentro do cabeçalho)  */
@@ -302,8 +335,9 @@ nav#menu ul {
 	text-transform: uppercase;
 	position: absolute;
 	top: -2.9%;
-	left: 45%;
-	float: center;
+	width: 60%;
+	margin-left: 10%;
+	margin-right: 10%;
 }
 			
 nav#menu li {
