@@ -278,7 +278,7 @@ aside#lateral a:hover{
 
 body{
     background: url("../imagens/praia5.png");
-	
+	background-size: 100% 100%;	
 }
 
 div#interface{
