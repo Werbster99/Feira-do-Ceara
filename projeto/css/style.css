@@ -277,7 +277,7 @@ aside#lateral a:hover{
 /* Configurações Especificas */
 
 body{
-    background: url("../imagens/praia5.png");
+    background: url("../imagens/praia5.png") no-repeat;
 	background-size: 100% 100%;	
 }
 
